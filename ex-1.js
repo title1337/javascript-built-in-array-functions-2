@@ -372,5 +372,8 @@ const bills = [
     pointRate: 0.01,
   },
 ];
+let sumTotal = bills.reduce((accumulator, totals) => {
+  return accumulator + totals.total
+},0 )
 
-// Start coding here
+console.log(`Total bill transaction is ${sumTotal.toLocaleString()}`)
