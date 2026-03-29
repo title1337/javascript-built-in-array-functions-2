@@ -4,7 +4,7 @@ let crimeRecordNames = ["Theodora Milenko",
   "Maisy Sudhir"];
 
 function searchCrimeRecord(name) {
-  if (crimeRecordNames.includes){
+  if (crimeRecordNames.includes(name)){
     return `${name}  has a crime record!!!`
   } else {
     return `${name} has no crime record.`
@@ -13,7 +13,7 @@ function searchCrimeRecord(name) {
 
 //ผลลัพธ์ที่ควรได้จาก Example case
 //ในกรณีที่ไม่เคยมีประวัติเกี่ยวกับอาชญากรรม
-console.log(searchCrimeRecord("Dilan Sandra")); //"Dilan Sandra has no crime record"
+console.log(searchCrimeRecord("Maisy Sudhir")); //"Dilan Sandra has no crime record"
 
 //ในกรณีที่เคยมีประวัติเกี่ยวกับอาชญากรรม
 console.log(searchCrimeRecord("Tinashe Benigno")); //"Tinashe Benigno has crime record !!!"
