@@ -1,5 +1,5 @@
 function isPalindrome(string) {
-  // Start coding here
+  return string.trim() === string.trim().spilt("").reverse().join("")
 }
 
 //Example case
